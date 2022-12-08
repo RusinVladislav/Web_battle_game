@@ -7,6 +7,8 @@ from equipment import Equipment
 
 app = Flask(__name__)
 
+app.run()
+
 heroes = {
     "player": BaseUnit,
     "enemy": BaseUnit
@@ -141,5 +143,6 @@ def choose_enemy():
         return redirect(url_for("start_fight"))
 
 
-if __name__ == "__main__":
-    app.run()
+# Стоит ли оставлять эту конструкцию
+# if __name__ == "__main__":
+#     app.run()
