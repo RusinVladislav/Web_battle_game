@@ -7,14 +7,14 @@ from equipment import Equipment
 
 app = Flask(__name__)
 
-app.run()
-
 heroes = {
     "player": BaseUnit,
     "enemy": BaseUnit
 }
 
 arena = Arena()  # TODO инициализируем класс арены
+
+app.run()
 
 
 @app.route("/")
@@ -141,8 +141,3 @@ def choose_enemy():
         enemy.equip_weapon(equipment.get_weapon(weapon_name))
         heroes["enemy"] = enemy
         return redirect(url_for("start_fight"))
-
-
-# Стоит ли оставлять эту конструкцию
-# if __name__ == "__main__":
-#     app.run()
