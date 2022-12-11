@@ -141,5 +141,6 @@ def choose_enemy():
         return redirect(url_for("start_fight"))
 
 
+# возможно это надо будет вынести из под if
 if __name__ == "__main__":
     app.run()
