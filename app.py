@@ -15,9 +15,6 @@ heroes = {
 arena = Arena()  # TODO инициализируем класс арены
 
 
-app.run()
-
-
 @app.route("/")
 def menu_page():
     # TODO рендерим главное меню (шаблон index.html)
@@ -145,5 +142,5 @@ def choose_enemy():
 
 
 # возможно это надо будет вынести из под if
-# if __name__ == "__main__":
-#     app.run()
+if __name__ == "__main__":
+    app.run()
