@@ -14,8 +14,6 @@ heroes = {
 
 arena = Arena()  # TODO инициализируем класс арены
 
-app.run()
-
 
 @app.route("/")
 def menu_page():
@@ -141,3 +139,7 @@ def choose_enemy():
         enemy.equip_weapon(equipment.get_weapon(weapon_name))
         heroes["enemy"] = enemy
         return redirect(url_for("start_fight"))
+
+
+if __name__ == "__main__":
+    app.run()
