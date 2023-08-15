@@ -20,7 +20,7 @@ A small game with a web interface about the battle of heroes in the style of old
 ## Start app
 1. Clone project
    ```
-   git clone https://github.com/AndrewIsaev/Battle_game.git
+   git clone https://github.com/RusinVladislav/Web_battle_game
 2. Create virtual environment
    ```
     python3 -m venv venv
